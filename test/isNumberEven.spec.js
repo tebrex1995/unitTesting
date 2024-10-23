@@ -1,5 +1,6 @@
-const NumbersValidator = require('../app/numbers_validator');
 const { expect } = require('chai');
+const { describe, it, beforeEach, afterEach } = require('mocha');
+const NumbersValidator = require('../app/numbers_validator');
 
 describe('isNumberEven positive tests', () => {
   let validator;
@@ -27,7 +28,7 @@ describe('isNumberEven positive tests', () => {
         expect(() => {
           validator.isNumberEven(input);
         }).to.throw(
-          `[${input}] is not of type "Number" it is of type "${typeof input}"`
+          `[${input}] is not of type "Number" it is of type "${typeof input}"`,
         );
       });
     });

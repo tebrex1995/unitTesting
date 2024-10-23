@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2024-10-23T13:43:14.754Z",
-    "end": "2024-10-23T13:43:14.787Z",
-    "duration": 33,
+    "start": "2024-10-23T18:09:13.215Z",
+    "end": "2024-10-23T18:09:13.252Z",
+    "duration": 37,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1f8b79de-f44d-4a37-8b04-9b368b2d9e77",
+      "uuid": "c49ba8da-2eb0-4b36-b57f-c27d413de6a3",
       "title": "",
       "fullFile": "/home/hyper/Desktop/epams/unitTesting/test/isNumberEven.spec.js",
       "file": "/test/isNumberEven.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "65df1d0b-b584-47d1-9fb3-3b6c8d514644",
+          "uuid": "c51398b5-14c2-433c-a5e4-21034c423216",
           "title": "isNumberEven positive tests",
           "fullFile": "/home/hyper/Desktop/epams/unitTesting/test/isNumberEven.spec.js",
           "file": "/test/isNumberEven.spec.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "validator = new NumbersValidator();",
               "err": {},
-              "uuid": "aa205d12-6945-42d9-b2f4-95e622fa1bc8",
-              "parentUUID": "65df1d0b-b584-47d1-9fb3-3b6c8d514644",
+              "uuid": "58a558cb-6885-49b8-b9b7-8b4f9ede17fb",
+              "parentUUID": "c51398b5-14c2-433c-a5e4-21034c423216",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "validator = null;",
               "err": {},
-              "uuid": "5d91e9bf-7c96-4e2c-b533-e5ec41fca634",
-              "parentUUID": "65df1d0b-b584-47d1-9fb3-3b6c8d514644",
+              "uuid": "ee5cbd38-b7ea-4238-bfaf-cb3701d438cd",
+              "parentUUID": "c51398b5-14c2-433c-a5e4-21034c423216",
               "isHook": true,
               "skipped": false
             }
@@ -74,7 +74,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "52350f26-08f1-48b0-b238-d8971f218b03",
+              "uuid": "7990ec7b-bba8-4cf2-8cd7-6f0df0568bc9",
               "title": "Positive tests",
               "fullFile": "/home/hyper/Desktop/epams/unitTesting/test/isNumberEven.spec.js",
               "file": "/test/isNumberEven.spec.js",
@@ -85,7 +85,7 @@
                   "title": "Should return true when provided an even number",
                   "fullTitle": "isNumberEven positive tests Positive tests Should return true when provided an even number",
                   "timedOut": false,
-                  "duration": 3,
+                  "duration": 2,
                   "state": "passed",
                   "speed": "fast",
                   "pass": true,
@@ -94,15 +94,15 @@
                   "context": null,
                   "code": "const validationResults = validator.isNumberEven(4);\nexpect(validationResults).to.be.equal(true);",
                   "err": {},
-                  "uuid": "cb7b2122-889a-4843-9369-8bf545672021",
-                  "parentUUID": "52350f26-08f1-48b0-b238-d8971f218b03",
+                  "uuid": "4c5160ed-6011-4752-82d0-6cd775122167",
+                  "parentUUID": "7990ec7b-bba8-4cf2-8cd7-6f0df0568bc9",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [
                 {
-                  "uuid": "4321a0d3-983b-471f-bc0d-6a87d0418a88",
+                  "uuid": "c5653783-b251-4a08-9855-674246470da7",
                   "title": "Negative tests",
                   "fullFile": "/home/hyper/Desktop/epams/unitTesting/test/isNumberEven.spec.js",
                   "file": "/test/isNumberEven.spec.js",
@@ -113,7 +113,7 @@
                       "title": "Should return false when provided an odd number",
                       "fullTitle": "isNumberEven positive tests Positive tests Negative tests Should return false when provided an odd number",
                       "timedOut": false,
-                      "duration": 0,
+                      "duration": 1,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -122,8 +122,8 @@
                       "context": null,
                       "code": "const validationResults = validator.isNumberEven(5);\nexpect(validationResults).to.be.equal(false);",
                       "err": {},
-                      "uuid": "08b9e4a4-4612-4e77-a248-cfdd2e6b1a3b",
-                      "parentUUID": "4321a0d3-983b-471f-bc0d-6a87d0418a88",
+                      "uuid": "610872d6-05da-4526-a673-d26c54452b7d",
+                      "parentUUID": "c5653783-b251-4a08-9855-674246470da7",
                       "isHook": false,
                       "skipped": false
                     },
@@ -131,7 +131,7 @@
                       "title": "Should throw error when provided not a number value",
                       "fullTitle": "isNumberEven positive tests Positive tests Negative tests Should throw error when provided not a number value",
                       "timedOut": false,
-                      "duration": 2,
+                      "duration": 4,
                       "state": "passed",
                       "speed": "fast",
                       "pass": true,
@@ -140,33 +140,33 @@
                       "context": null,
                       "code": "const input = 'four';\nexpect(() => {\n  validator.isNumberEven(input);\n}).to.throw(\n  `[${input}] is not of type \"Number\" it is of type \"${typeof input}\"`\n);",
                       "err": {},
-                      "uuid": "1730d9aa-9989-4288-a673-655963884461",
-                      "parentUUID": "4321a0d3-983b-471f-bc0d-6a87d0418a88",
+                      "uuid": "0347e3e2-c9b9-4b27-be65-7d10b0156d85",
+                      "parentUUID": "c5653783-b251-4a08-9855-674246470da7",
                       "isHook": false,
                       "skipped": false
                     }
                   ],
                   "suites": [],
                   "passes": [
-                    "08b9e4a4-4612-4e77-a248-cfdd2e6b1a3b",
-                    "1730d9aa-9989-4288-a673-655963884461"
+                    "610872d6-05da-4526-a673-d26c54452b7d",
+                    "0347e3e2-c9b9-4b27-be65-7d10b0156d85"
                   ],
                   "failures": [],
                   "pending": [],
                   "skipped": [],
-                  "duration": 2,
+                  "duration": 5,
                   "root": false,
                   "rootEmpty": false,
                   "_timeout": 2000
                 }
               ],
               "passes": [
-                "cb7b2122-889a-4843-9369-8bf545672021"
+                "4c5160ed-6011-4752-82d0-6cd775122167"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 3,
+              "duration": 2,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
