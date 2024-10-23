@@ -1,0 +1,23 @@
+{
+  "name": "unitTesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0"
+  },
+  "dependencies": {
+    "c8": "^10.1.2",
+    "chai": "^4.5.0",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3"
+  }
+}
